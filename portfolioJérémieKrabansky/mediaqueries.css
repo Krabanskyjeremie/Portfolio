@@ -4,8 +4,8 @@
         margin-bottom: 6rem;
     }
     
-    .over-containers {
-        flex-wrap: wrap;
+    #contact{
+        position: relative;
     }
 }
 
@@ -46,6 +46,7 @@
 
     .over-containers{
         margin-top: 0;
+        flex-wrap: wrap;
     }
 
 
