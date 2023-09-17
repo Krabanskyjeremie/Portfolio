@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mijn Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Jérémie Krabansky</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#over">Over mij</a></li>
+                <li><a href="#ervaringen">Ervaringen</a></li>
+                <li><a href="#projecten">Projecten</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Jérémie Krabansky</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icoon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#over" onclick="toggleMenu()">Over mij</a></li>
+                <li><a href="#ervaringen" onclick="toggleMenu()">Ervaringen</a></li>
+                <li><a href="#projecten" onclick="toggleMenu()">Projecten</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>  
+            </div>
+        </div>
+    </nav>
+    <section id="profiel">
+        <div class="section__foto-container">
+            <img id="profiel-foto" src="./assets/pf.jpeg" alt="Jérémie Krabansky profiel foto">
+        </div>
+        <div class="section__tekst">
+            <p class="section__tekst__p1">Hallo, ik ben</p>
+            <h1 class="titel">Jérémie Krabansky</h1>
+            <p class="section__tekst__p2">Web Designer</p>
+            <div class="btn-containter">
+                <button 
+                class="btn btn-kleur-2" 
+                onclick="window.open('./assets/jérémieKrabanskyCv.pdf')"
+                >
+                Download CV
+                </button>
+                <button 
+                class="btn btn-kleur-1" 
+                onclick="location.href='./#contact'"
+                >
+                Contact info
+                </button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icoon" onclick="location.href='https://www.linkedin.com/in/j%C3%A9r%C3%A9mie-krabansky-33b897172/'">
+                <img src="./assets/github.png" alt="My github profile" class="icoon" onclick="location.href='https://github.com/Krabanskyjeremie'">
+            </div>
+        </div>
+    </section>
+    <section id="over">
+        <p class="section__tekst__p1">Meer weten</p>
+        <h1 class="titel">Over mij</h1>
+        <div class="section-container">
+            <div class="section__foto-container">
+                <img src="assets/pf.jpeg" alt="Profiel foto" class="over-foto">
+            </div>
+            <div class="over-details-container">
+                <div class="over-containers">
+                    <div class="details-container">
+                        <img src="assets/experience.png" alt="Ervaring icoon" class="icoon">
+                        <h3>Ervaringen</h3>
+                        <p>Ongeveer 6 maanden <br/>web designer</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="assets/education.png" alt="Opleiding icoon" class="icoon">
+                        <h3>Opleiding</h3>
+                        <p>Bachelor in bedrijfsmanagement met afstudeerrichting marketing</p>
+                    </div>
+                </div>
+                <div class="tekst-container">
+                    <p>Hey daar! Ik ben Jérémie Krabansky, afgestudeerd als Bachelor in Bedrijfsmanagement met een specialisatie in marketing in 2021. Mijn reis in de wereld van webontwikkeling begon ik in april 2023. Sindsdien heb ik mij gespecialiseerd in HTML & CSS. Naast mijn passie voor code, ben ik een levensgenieter en hecht ik veel waarde aan respect. Mijn andere passies zijn voetbal & fitness.</p>
+                </div>
+            </div>
+        </div>
+        <img src="assets/arrow.png" alt="pijl icoon" class="icoon pijl" onclick="location.href='./#ervaringen'">
+    </section>
+    <section id="ervaringen">
+        <p class="section__tekst__p1">Ontdek mijn</p>
+        <h1 class="titel">Ervaringen</h1>
+        <div class="ervaringen-details-container">
+            <div class="over-containers">
+                <div class="details-container">
+                    <h2 class="ervaringen-sub-titel">Frontend Development</h2>
+                    <div class="artikel-container">
+                        <article>
+                            <img src="assets/checkmark.png" alt="ervaring icoon" class="icoon">
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Ervaren</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="assets/checkmark.png" alt="ervaring icoon" class="icoon">
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Ervaren</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="assets/checkmark.png" alt="ervaring icoon" class="icoon">
+                            <div>
+                                <h3>Wordt vervolgd</h3>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="ervaringen-sub-titel">Backend Development</h2>
+                    <div class="artikel-container">
+                        <article>
+                            <img src="assets/checkmark.png" alt="ervaring icoon" class="icoon">
+                            <div>
+                                <h3>Wordt vervolgd</h3>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="section__tekst__p1">Veel meer ervaring in de toekomst!</p>
+        <img src="assets/arrow.png" alt="pijl icoon" class="icoon pijl" onclick="location.href='./#projecten'">
+    </section>
+    <section id="projecten">
+        <p class="section__tekst__p1">Blader door mijn recente</p>
+        <h1 class="titel">Projecten</h1>
+        <div class="ervaringen-details-container">
+            <div class="over-containers">
+                <div class="details-container kleur-container">
+                    <div class="artikel-container">
+                        <img src="assets/project.jpg" alt="Project 1" class="project-img">   
+                    </div>
+                    <h2 class="ervaringen-sub-titel project-titel">Project Een</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-kleur-2 project-btn" onclick="location.href='https://github.com/Krabanskyjeremie'">Github</button>
+                        <button class="btn btn-kleur-2 project-btn" onclick="location.href='https://github.com/Krabanskyjeremie'">Live Demo</button>
+                    </div>
+                </div>
+                <div class="details-container kleur-container">
+                    <div class="artikel-container">
+                        <img src="assets/project.jpg" alt="Project 2" class="project-img">   
+                    </div>
+                    <h2 class="ervaringen-sub-titel project-titel">Project Twee</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-kleur-2 project-btn" onclick="location.href='https://github.com/Krabanskyjeremie'">Github</button>
+                        <button class="btn btn-kleur-2 project-btn" onclick="location.href='https://github.com/Krabanskyjeremie'">Live Demo</button>
+                    </div>
+                </div>
+                <div class="details-container kleur-container">
+                    <div class="artikel-container">
+                        <img src="assets/project.jpg" alt="Project 3" class="project-img">   
+                    </div>
+                    <h2 class="ervaringen-sub-titel project-titel">Project Drie</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-kleur-2 project-btn" onclick="location.href='https://github.com/Krabanskyjeremie'">Github</button>
+                        <button class="btn btn-kleur-2 project-btn" onclick="location.href='https://github.com/Krabanskyjeremie'">Live Demo</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="assets/arrow.png" alt="pijl icoon" class="icoon pijl" onclick="location.href='./#contact'">
+    </section>
+    <section id="contact">
+        <p class="section__tekst__p1">Neem contact op</p>
+        <h1 class="titel">Met mij</h1>
+        <div class="contact-info-boven-container">
+            <div class="contact-info-container">
+                <img src="assets/email.png" alt="email icoon" class="icoon contact-icoon contact-icoon-mail">
+                <p><a href="mailto:krabanskyjeremie@gmail.com">krabanskyjeremie@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="assets/linkedin.png" alt="LinkedIn icoon" class="icoon contact-icoon">
+                <p><a href="https://www.linkedin.com/in/j%C3%A9r%C3%A9mie-krabansky-33b897172/" target="_blank">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#over">Over mij</a></li>
+                    <li><a href="#ervaringen">Ervaringen</a></li>
+                    <li><a href="#projecten">Projecten</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2023 Jérémie Krabansky. All Rights Reserved.</p>
+    </footer>
+   <script src="script.js"></script>   
+</body>
+</html>
